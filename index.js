@@ -82,7 +82,7 @@ function elementCreation() {
   Item.appendChild(checkbox1);
   Item.appendChild(paragraph1);
   Item.appendChild(deleteImage1);
-  unOrderedListedItems.appendChild(Item);
+  unOrderedListedItems.prepend(Item);
   parentContainer.appendChild(unOrderedListedItems);
 
   // Push the created item to the array
