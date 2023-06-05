@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/main.css" />
+    <!-- <link rel="stylesheet" href="input.css" /> -->
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <p>TODO</p>
+        <div>
+          <img src="/images/icon-sun.svg" alt="dark-mode" srcset="" id="icon" />
+        </div>
+      </section>
+
+      <!-- <div class="input-with-checkbox">
+        <input type="text" placeholder="Enter text" />
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+      </div> -->
+
+      <section class="input-field">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <input
+          type="text"
+          class="text-input"
+          value=""
+          placeholder="Create a new todo"
+        />
+      </section>
+
+      <section class="todo-items">
+        <ul class="items-container">
+          <li class="items" id="parent-hover">
+            <input type="checkbox" class="checkbox" />
+            <p class="strikethrough">Complete Online JS COURSE</p>
+            <img src="/images/icon-cross.svg" alt="delete" class="delete" />
+          </li>
+          <li class="items">
+            <input type="checkbox" class="checkbox" />
+            <p>Complete Online JS COURSE</p>
+            <img src="/images/icon-cross.svg" alt="delete" class="delete" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="items-details">
+        <ul>
+          <li>5 items left</li>
+          <li>All</li>
+          <li>Active</li>
+          <li>Completed</li>
+          <li>Clear Completed</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Makinde Bolaji</a>.
+    </div> -->
+
+    <script src="index.js"></script>
+  </body>
+</html>

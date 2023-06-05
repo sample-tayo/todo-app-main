@@ -1,0 +1,48 @@
+/* input field */
+.group {
+  padding: 1px 0px;
+  background-color: #c058f3;
+}
+
+/* input[type='text'] {
+  width: 40rem;
+  height: 3.5rem;
+} */
+
+input[type='checkbox'] {
+  display: none;
+}
+
+label {
+  position: relative;
+}
+
+label::before {
+  content: '';
+  background: url('/images/icon-check.svg'),
+    linear-gradient(90deg, #57ddff, #c058f3);
+  background-position: center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -40px;
+  top: -4px;
+  opacity: 0;
+  border-radius: 50%;
+}
+
+input[type='checkbox']:checked + label::before {
+  opacity: 1;
+}
+
+label::after {
+  content: '';
+  border: 2px solid #27ae60;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -42px;
+  top: -6px;
+  border-radius: 50%;
+}
